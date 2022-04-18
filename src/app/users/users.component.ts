@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from "../user";
 
 @Component({
   selector: 'app-users',
@@ -7,9 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
 
-  constructor() { }
+  user!: User;
+  userRepos:any;
+  result:string =''
 
-  ngOnInit(): void {
+  constructor(private userService: UserService) { }
+
+  searchUser() {
+    this.userService.userRequest(this.result)
+    this.user = this.userService.user
   }
+
+  searchUserRepo() {
+    
+    this.userService.userRepoRequest(this.result).subscribe((userRepos)=>{
+      this.userRepos=userRepos
+    console.log(this.userRepos, "User Repos");
+
+    })
+
+    
+  }
+  ngOnInit() {
+}
 
 }
