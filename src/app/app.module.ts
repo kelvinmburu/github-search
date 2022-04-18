@@ -10,6 +10,7 @@ import { UserRepoComponent } from './user-repo/user-repo.component';
 import { ReposComponent } from './repos/repos.component';
 import { UsersComponent } from './users/users.component';
 import { FooterComponent } from './footer/footer.component';
+import { UserService } from './search-service/user.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
