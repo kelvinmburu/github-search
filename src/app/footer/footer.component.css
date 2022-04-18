@@ -1,0 +1,7 @@
+.a-link {
+    transition: all 0.5 ease;
+}
+
+.a-link:hover {
+    color: crimson !important;
+}
