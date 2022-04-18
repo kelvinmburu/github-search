@@ -14,3 +14,13 @@
 body {
     background-color: antiquewhite;
 }
+
+.box {
+    max-width: 700px;
+    min-height: 550px;
+}
+
+.custom {
+    width: 250px !important;
+  
+}
