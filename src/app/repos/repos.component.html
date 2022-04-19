@@ -1,1 +1,39 @@
-<p>repos works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main">
+    <!-- Logo image -->
+    <div class="logo"></div>
+
+    <form>
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="search github repository..." [(ngModel)]="repoName"
+          name="repoName" (keyup)='searchRepo()' autocomplete="off" style="background-color: #f2f2f2;">
+      </div>
+
+      <div class="list"></div>
+
+      <ul>
+        <li *ngFor= 'let rep of repo'>
+          <a target="_blank" href="{{rep.html_url}}">
+            <div class="list">
+              <h3>{{rep.name}}</h3> <br>
+              {{rep.description}}
+            </div>
+          </a>
+        </li>
+      </ul>
+
+    </form>
+  </div>
+</body>
+
+</html>
