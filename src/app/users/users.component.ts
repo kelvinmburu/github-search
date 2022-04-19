@@ -1,35 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from "../user";
+import { User } from '../user';
+
+import { SearchService } from '../search-service/user.service';
 
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
-  styleUrls: ['./users.component.css']
+  styleUrls: ['./users.component.css'],
 })
 export class UsersComponent implements OnInit {
-
   user!: User;
-  userRepos:any;
-  result:string =''
+  userRepo: any;
+  result: string = '';
 
-  constructor(private userService: UserService) { }
+  constructor(private searchService: SearchService) {}
 
   searchUser() {
-    this.userService.userRequest(this.result)
-    this.user = this.userService.user
+    this.searchService.userRequest(this.result);
+    this.user = this.searchService.user;
   }
 
   searchUserRepo() {
-    
-    this.userService.userRepoRequest(this.result).subscribe((userRepos)=>{
-      this.userRepos=userRepos
-    console.log(this.userRepos, "User Repos");
-
-    })
-
-    
+    this.searchService.userRepoRequest(this.result).subscribe((userRepo: any) => {
+      this.userRepo = userRepo;
+      console.log(this.userRepo, 'User Repo');
+    });
   }
-  ngOnInit() {
-}
-
+  ngOnInit() {}
 }
