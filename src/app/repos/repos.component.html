@@ -15,14 +15,14 @@
 
     <form>
       <div class="mb-3">
-        <input type="email" class="form-control" placeholder="search github repository..." [(ngModel)]="repoName"
-          name="repoName" (keyup)='searchRepo()' autocomplete="off" style="background-color: #f2f2f2;">
+        <input type="email" class="form-control" placeholder="Search GitHub repository..." [(ngModel)]="repoName"
+          name="repoName" (keyup)='searchRepo()' autocomplete="off">
       </div>
 
       <div class="list"></div>
 
       <ul>
-        <li *ngFor= 'let rep of repo'>
+        <li *ngFor='let rep of repo'>
           <a target="_blank" href="{{rep.html_url}}">
             <div class="list">
               <h3>{{rep.name}}</h3> <br>
