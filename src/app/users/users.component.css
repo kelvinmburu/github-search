@@ -1,22 +1,21 @@
 .main {
-    font-family: 'Dongle', sans-serif;
     font-size: 18px;
     width: 70vw;
-    margin: 20px auto;
+    margin: -615px auto;
 }
 
 
 .card {
     margin: 10vh auto;
-    padding: 80px 80px;
-    width: 90vh;
+    padding: 20px 80px;
+    /* width: 90vh; */
     background-color: #f2f2f2;
     background-size: 70% 80%;
     background-position: center right;
 }
 
 .card p {
-    color: #ae887b;
+    color: #7ba4ae;
     background-color: #f2f2f2;
 }
 
@@ -29,43 +28,35 @@
 input {
     margin-top: 20px;
     border: none;
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
     border: 1px inset #ae887b;
     padding: 10px 500px 10px 10px;
-    color: #ae887b;
+    color: #7ba4ae;
     font-weight: 300;
     font-size: 18px;
     outline: none;
 }
 
 input::placeholder{
-    font-family: 'Bad Script', cursive;
     border: none;
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
     font-weight: 300;
     font-size: 18px;
-    color: #ae887b;
+    color: #7ba4ae;
 }
 
-button {
-    background: #ae887b;
-    border: outset;
-    border-radius: 5px;
-    padding: 15px 50px;
-    margin: 20px 0;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 21px;
-    color: #f2f2f2;
+.main-btn {
+    padding: 40px 55px;
+    color: #fff;
+    transition: all 0.5 ease-in-out;
+    outline: none;
 }
 
 button:hover {
-    background: #b4978d;
-    border: inset;
+    background: crimson;
     
 }
 
-
 app-user-repo {
-    color: #ae887b;
+    color: #7ba4ae;
 }
