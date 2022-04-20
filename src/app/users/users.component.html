@@ -14,7 +14,7 @@
 
     <form>
       <div class="mb-3">
-        <input type="email" id="username" class="form-control" placeholder="enter github username..."
+        <input type="email" id="username" class="form-control" placeholder="Enter github username..."
           [(ngModel)]="result" name="result" (keyup)="searchUser()" autocomplete="off" />
       </div>
     </form>
@@ -26,8 +26,8 @@
       <p>Followers: {{ user.followers }}</p>
       <p>Following: {{ user.following }}</p>
       <p>Repositories: {{ user.repos }}</p>
-      <button (click)="searchUserRepo()">
-        View {{ user.userName }}'s Repositories
+      <button (click)="searchUserRepo()" class="main-btn btn btn-primary btn-lg mx-auto">
+        View {{ user.userName }} Repositories
       </button>
       <app-user-repo [repos]="userRepo"></app-user-repo>
     </div>
