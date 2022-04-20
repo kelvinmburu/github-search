@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { UserRepoComponent } from './user-repo/user-repo.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { ReposComponent } from './repos/repos.component';
 import { UsersComponent } from './users/users.component';
 
-// remember to add navigation path to routes
 
 const routes: Routes = [
+  {path: '', redirectTo: '/navigation', pathMatch: 'full'},
   {path: 'users', component: UsersComponent},
-  {path: 'user-repo', component: UserRepoComponent}
+  {path: 'repos', component: ReposComponent},
+  //{path: 'navigation', component: NavigationComponent}
 ];
 
 @NgModule({
@@ -15,4 +17,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [UsersComponent, UserRepoComponent]
+export const routingComponents = [UsersComponent, ReposComponent]
