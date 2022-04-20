@@ -1,62 +1,58 @@
 .main {
-    font-size: 18px;
-    width: 70vw;
-    margin: -615px auto;
+  font-size: 18px;
+  width: 70vw;
+  margin: -615px auto;
 }
 
 
 .card {
-    margin: 10vh auto;
-    padding: 20px 80px;
-    /* width: 90vh; */
-    background-color: #f2f2f2;
-    background-size: 70% 80%;
-    background-position: center right;
+  margin: 10vh auto;
+  padding: 20px 80px;
+  background-color: #f2f2f2;
+  background-size: 70% 80%;
+  background-position: center right;
 }
 
 .card p {
-    color: #7ba4ae;
-    background-color: #f2f2f2;
+  color: #7ba4ae;
+  background-color: #f2f2f2;
 }
 
 .logo {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 
 
 input {
-    margin-top: 20px;
-    border: none;
-    /* background-color: #f2f2f2; */
-    border: 1px inset #ae887b;
-    padding: 10px 500px 10px 10px;
-    color: #7ba4ae;
-    font-weight: 300;
-    font-size: 18px;
-    outline: none;
+  margin-top: 20px;
+  border: none;
+  padding: 10px 500px 10px 10px;
+  color: #7ba4ae;
+  font-weight: 300;
+  font-size: 18px;
+  outline: none;
 }
 
-input::placeholder{
-    border: none;
-    /* background-color: #f2f2f2; */
-    font-weight: 300;
-    font-size: 18px;
-    color: #7ba4ae;
+input::placeholder {
+  border: none;
+  font-weight: 300;
+  font-size: 18px;
+  color: #7ba4ae;
 }
 
 .main-btn {
-    padding: 40px 55px;
-    color: #fff;
-    transition: all 0.5 ease-in-out;
-    outline: none;
+  padding: 40px 55px;
+  color: #fff;
+  transition: all 0.5 ease-in-out;
+  outline: none;
 }
 
 button:hover {
-    background: crimson;
-    
+  background: crimson;
+
 }
 
 app-user-repo {
-    color: #7ba4ae;
+  color: #7ba4ae;
 }

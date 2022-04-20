@@ -1,78 +1,72 @@
 .main {
-    font-family: 'Dongle', sans-serif;
-    width: 70vw;
-    margin: 20px auto;
+  width: 70vw;
+  margin: -638px auto;
 }
 
 .card {
-    margin: 20vh auto;
-    padding: 80px 80px;
-    width: 90vh;
-    /* background: url(../../assets/img/circles.svg) no-repeat; */
-    background-size: 70% 80%;
-    background-position: center right;
-    background-color: #f2f2f2;
-    border: 1px solid #ae887b;
-    box-shadow: #ae887b;
-    border-radius: 10px;
+  margin: 20vh auto;
+  padding: 80px 80px;
+  width: 90vh;
+  background-size: 70% 80%;
+  background-position: center right;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .card p {
-    color: #4b533a;
-    background-color: #f2f2f2;
+  color: #4b533a;
+  background-color: #ffffff;
 }
 
 .logo {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 
 input {
-    margin: 20px 0;
-    border: none;
-    background-color: #f2f2f2;
-    border-bottom: 1px solid #ae887b;
-    padding: 10px 500px 10px 10px;
-    color: #ae887b;
-    font-weight: 300;
-    font-size: 18px;
-    outline: none;
+  margin: 20px 0;
+  border: none;
+  background-color: #fff;
+  padding: 10px 500px 10px 10px;
+  color: #7ba4ae;
+  font-weight: 300;
+  font-size: 18px;
+  outline: none;
 }
 
-input::placeholder{
-    border: none;
-    background-color: #f2f2f2;
-    font-weight: 300;
-    font-size: 18px;
-    color: #ae887b;
+input::placeholder {
+  border: none;
+  background-color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+  color: #7ba4ae;
 }
 
 p {
-    color: #ae887b;
-    background-color: #f2f2f2;
+  color: #7ba4ae;
+  background-color: #fff;
 }
 
 ul {
-    color: #ae887b;
-    text-decoration: none;
-    list-style-type: none;
-    background-color: #f2f2f2;
+  color: #7ba4ae;
+  text-decoration: none;
+  list-style-type: none;
+  background-color: #fff;
 }
 
 a {
-    color: #ae887b;
-    text-decoration: none;
-    background-color: #f2f2f2;
+  color: #7ba4ae;
+  text-decoration: none;
+  background-color: #fff;
 }
 
 .list {
-    padding: 20px;
-    border-bottom: 1px solid #ee9f6b44;
-    background-color: #f2f2f2;
+  padding: 20px;
+  background-color: #f2f2f2;
 }
 
 .list:hover {
-    background-color: #ee9f6b44;
-    transition: 800ms;
-    cursor: pointer;
+  background-color: #fff;
+  transition: 800ms;
+  cursor: pointer;
 }
