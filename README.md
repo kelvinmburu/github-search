@@ -32,4 +32,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 To contribute to this project, fork the project and make a PR.
 
 ## License
-View the project [license](LICENSE)
+View the project [LICENSE](LICENSE)
