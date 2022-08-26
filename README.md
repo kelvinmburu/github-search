@@ -1,6 +1,6 @@
 # GithubSearch
 
-This is an Angular application that allows a user to search for GitHub profiles and view repositories. It uses GitHub API
+This is an Angular application that allows a user to search for GitHub profiles and view repositories, and uses the GitHub [REST API](https://docs.github.com/en/rest)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
